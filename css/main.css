@@ -1,0 +1,58 @@
+h1 {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 0.4em 0;
+  margin-bottom: 1em;
+}
+
+h3 {
+  color: #3e4245;
+}
+
+h5 {
+  font-size: 1.1em;
+  color: #7c7e80;
+}
+
+p {
+  color: #443f38;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 0.3em;
+}
+
+.search-btn {
+  width: 20%;
+}
+
+.card {
+  padding-top: 0.5em;
+  margin-bottom: 1em;
+  line-height: 0.9em;
+}
+
+.selected-card {
+  padding: 1em 0 0.4em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.card .btn {
+  width: 6em;
+  align-self: flex-end;
+  position: absolute;
+  right: 0.5em; top: 3em;
+}
+
+.selected-card > .btn {
+  position: absolute;
+  right: 0.5em;
+  width: 6em;
+}
+
+#total span {
+  font-weight: 600;
+  color: #e98e39;
+}

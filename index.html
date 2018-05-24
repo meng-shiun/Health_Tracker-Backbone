@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Tracker - Backbone</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <h1>Health Tracker</h1>
+
+  <div class="container text-center">
+    <div id="main">
+      <form id="search-food" method="post">
+        <div class="form-group">
+          <input type="text" id="input-food" placeholder="search food" value="" autocomplete="off">
+          <input type="submit" class="search-btn btn btn-outline-primary" value="Search for Food Item">
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <h3>Results</h3>
+          <div id="food-items">
+            <!-- The food detail will be inserted here -->
+            <!-- template test start -->
+            <!-- <div class="card mx-auto">
+              <h5 class="card-title">Food title</h5>
+              <p class="card-text text-left ml-4">Brand: </p>
+              <p class="card-text text-left ml-4">1 serving</p>
+              <p class="card-text text-left ml-4">Calories:</p>
+              <button class="add-item btn btn-outline-primary">Add</button>
+            </div> -->
+            <!-- template test end -->
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <h3>Selected</h3>
+          <div id="selected-items" class="mx-auto">
+            <!-- The selected item detail will be inserted here -->
+            <!-- template test start -->
+            <!-- <div class="row selected-card">
+              <p class="col-6 card-text text-left">Name</p>
+              <p class="col-6 card-text text-left">Calories</p>
+              <button class="remove-item select-item btn btn-outline-danger">Remove</button>
+            </div> -->
+            <!-- template test end -->
+          </div>
+
+          <h3 class="mt-5">Total Calories</h3>
+          <p id="total">Your total calories intake: <span>0</span> kcal</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script type="text/template" id="foodItem-template">
+    <div class="card mx-auto">
+      <h5 class="card-title text-left ml-4"><%= foodItem.name %></h5>
+      <p class="card-text text-left ml-4">Brand: <%= foodItem.brand %></p>
+      <p class="card-text text-left ml-4">Serving Size: <%= foodItem.servingSize %> <%= foodItem.servingUnit %></p>
+      <p class="card-text text-left ml-4"><%= foodItem.calories %> kcal</p>
+      <button class="add-item btn btn-outline-primary">Add</button>
+    </div>
+  </script>
+
+  <script type="text/template" id="selectedItem-template">
+    <div class="row selected-card">
+      <p class="col-7 card-text text-left"><%= foodItem.name %></p>
+      <p class="col-5 card-text text-left"><%= foodItem.calories %> kcal</p>
+      <button class="remove-item select-item btn btn-outline-danger">Remove</button>
+    </div>
+  </script>
+
+  <script type="text/template" id="totalCalories-template">
+
+  </script>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/backbone/backbone-min.js"></script>
+  <script src="js/app.js">
+
+  </script>
+</body>
+</html>

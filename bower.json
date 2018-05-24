@@ -1,0 +1,19 @@
+{
+  "name": "health_tracker-backbone",
+  "homepage": "",
+  "description": "Health tracker application built in Backbone.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "backbone": "~1.3.3",
+    "jquery": "~3.3.1",
+    "bootstrap": "~4.1.1"
+  }
+}
